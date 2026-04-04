@@ -487,9 +487,9 @@
   <!-- START -->
   <div id="startScreen" class="card start-card">
     <div class="q-label" style="text-align:center;margin-bottom:16px;">READY?</div>
-    <h2>ランダム 20問</h2>
+    <h2>ランダム 30問</h2>
     <div class="word-count-badge" id="wordCountBadge">—<span>単語登録済み</span></div>
-    <p>全単語からランダムに20問出題されます。</p>
+    <p>全単語からランダムに30問出題されます。</p>
     <button class="btn" onclick="startQuiz()" style="width:100%;padding:16px;font-size:14px;" id="startBtn">START →</button>
   </div>
 
@@ -497,7 +497,7 @@
   <div id="quizArea" style="display:none;">
     <div class="progress-wrap">
       <div class="progress-info">
-        <div class="progress-count"><span id="qNum">1</span> / 20</div>
+        <div class="progress-count"><span id="qNum">1</span> / 30</div>
         <div class="score-badge">✓ <span id="scoreDisp">0</span></div>
       </div>
       <div class="progress-bar">
@@ -744,7 +744,7 @@ function showPage(name) {
 // ============================================================
 // QUIZ LOGIC
 // ============================================================
-const SET_SIZE = 20;
+const SET_SIZE = 30;
 let questions = [], currentQ = 0, score = 0, answered = false, missedWords = [];
 
 function updateWordCount() {
